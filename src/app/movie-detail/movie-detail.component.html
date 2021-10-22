@@ -1,0 +1,10 @@
+<p>movie-detail works!</p>
+<div *ngIf="movie">
+    <h2>{{movie.name | uppercase}} Details</h2>
+    <div><span class="badge">id: </span>{{movie.id}}</div>
+
+    <div>
+        <label for="name">Movie name: </label>
+        <input id="name" [(ngModel)]="movie.name" placeholder="name" />
+    </div>
+</div>
